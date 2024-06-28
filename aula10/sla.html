@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bora</title>
+</head>
+<body>
+    <h1>CONTADOR MAGICO</h1>
+    <input type="number" id="txtn1"> +
+    <input type="number" id="txtn2">
+    <button onclick="somar()">SOMAR</button>
+    <p id="txtres">RESULTADO</p>
+
+    <script>
+        function somar(){
+            var restext = document.getElementById('txtres')
+            var tn1 = document.getElementById('txtn1')
+            var tn2 = document.getElementById('txtn2')
+
+            var n1 = Number(tn1.value)
+            var n2 = Number(tn2.value)
+
+            var s = n1 + n2
+
+            restext.innerHTML = `A soma entre o número ${n1} e o número ${n2} é igual a <strong>${s}</strong> `
+        }
+    </script>
+</body>
+</html>
